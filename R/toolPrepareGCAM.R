@@ -18,9 +18,8 @@ toolPrepareGCAM <- function(x, subtype) {
        unit <- NULL
 
   dt <- magpie2dt(x)
-  #mapfile <- system.file("extdata", "mappingGCAMtoEDGET.csv",
-                        # package = "mredgetransport", mustWork = TRUE)
-  mapfile <- "C:/Users/johannah/Documents/Git_repos/mredgetransport/inst/extdata/mappingGCAMtoEDGET.csv"
+  mapfile <- system.file("extdata", "mappingGCAMtoEDGET.csv",
+                         package = "mredgetransport", mustWork = TRUE)
   mappingGCAM <- fread(mapfile)
   switch(
     subtype,
